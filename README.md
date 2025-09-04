@@ -1,16 +1,23 @@
 # 💼 Payroll Management System
 
 <div align="center">
-  
-![Payroll Management System](https://img.shields.io/badge/Payroll-Management%20System-blue?style=for-the-badge)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.0-brightgreen?style=for-the-badge&logo=springboot)
-![React](https://img.shields.io/badge/React-19.1.1-61dafb?style=for-the-badge&logo=react)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql)
 
-*A comprehensive, full-stack payroll management solution built with modern technologies*
+# 💼 Payroll Management System  
 
+![Payroll Management System](https://img.shields.io/badge/Payroll-Management%20System-blue?style=for-the-badge&logo=apacheairflow)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.0-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-4.0.0-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![Java](https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java&logoColor=white)
+
+---
+
+### 🚀 A Full-Stack Payroll Management Solution  
+*Manage employees, process salaries, and generate payroll securely with Spring Boot, React, and MySQL.*  
 
 </div>
+
 
 ---
 
