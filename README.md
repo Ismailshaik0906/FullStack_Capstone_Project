@@ -1,70 +1,318 @@
-# Getting Started with Create React App
+# 💼 Payroll Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  
+![Payroll Management System](https://img.shields.io/badge/Payroll-Management%20System-blue?style=for-the-badge)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.0-brightgreen?style=for-the-badge&logo=springboot)
+![React](https://img.shields.io/badge/React-19.1.1-61dafb?style=for-the-badge&logo=react)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?style=for-the-badge&logo=mysql)
 
-## Available Scripts
+*A comprehensive, full-stack payroll management solution built with modern technologies*
 
-In the project directory, you can run:
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Table of Contents
 
-### `npm test`
+- [✨ Features](#-features)
+- [🏗️ Architecture](#️-architecture)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📱 Screenshots](#-screenshots)
+- [⚡ Quick Start](#-quick-start)
+- [🔧 Installation](#-installation)
+- [🔐 Authentication](#-authentication)
+- [📊 API Documentation](#-api-documentation)
+- [🧪 Testing](#-testing)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 👤 **User Management**
+- 🔐 **JWT Authentication** - Secure login/logout with role-based access
+- 👥 **Role-Based Authorization** - Admin and Employee roles with different permissions
+- 📝 **User Registration** - Self-registration for employees with admin approval
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 👨‍💼 **Employee Management**
+- ➕ **CRUD Operations** - Complete employee lifecycle management
+- 📋 **Profile Management** - Detailed employee profiles with personal information
+- 🏢 **Department Assignment** - Organize employees by departments
+- 💼 **Job Role Assignment** - Define roles with salary structures
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏢 **Department & Job Role Management**
+- 🏗️ **Department Creation** - Manage organizational departments
+- 💰 **Salary Structure** - Define base salaries for different job roles
+- 📊 **Organizational Hierarchy** - Clear department and role relationships
 
-### `npm run eject`
+### 📅 **Leave Management**
+- 📝 **Leave Applications** - Easy leave request submission
+- ⏰ **Leave Types** - Support for Sick, Casual, Paid, and Unpaid leaves
+- ✅ **Approval Workflow** - Admin approval/rejection with comments
+- 📈 **Leave Balance Tracking** - Real-time leave balance management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💰 **Payroll Management**
+- 🧮 **Salary Calculation** - Automated payroll generation with allowances/deductions
+- 📄 **Payslip Generation** - Professional payslip design with print functionality
+- 📊 **Monthly Reports** - Comprehensive payroll reports and analytics
+- 💳 **Payment Processing** - Track payment status and history
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📱 **Modern UI/UX**
+- 🎨 **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- 🌟 **Modern Interface** - Clean, intuitive design with Bootstrap 5
+- ⚡ **Fast Performance** - Optimized loading and smooth interactions
+- 🔄 **Real-time Updates** - Live data synchronization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🏗️ Architecture
 
-## Learn More
+```mermaid
+graph TB
+    A[React Frontend] --> B[Spring Boot API]
+    B --> C[MySQL Database]
+    B --> D[JWT Authentication]
+    B --> E[Spring Security]
+    
+    subgraph "Frontend Layer"
+        F[React Components]
+        G[React Router]
+        H[Axios HTTP Client]
+        I[Bootstrap UI]
+    end
+    
+    subgraph "Backend Layer"
+        J[REST Controllers]
+        K[Business Services]
+        L[JPA Repositories]
+        M[Entity Models]
+    end
+    
+    subgraph "Database Layer"
+        N[Users Table]
+        O[Employees Table]
+        P[Departments Table]
+        Q[Leave Requests Table]
+        R[Payroll Table]
+    end
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Tech Stack
 
-### Code Splitting
+### **Frontend**
+- ⚛️ **React 19** - Modern UI library with hooks
+- 🛣️ **React Router DOM** - Client-side routing
+- 🎨 **Bootstrap 5** - Responsive CSS framework
+- 🎯 **Axios** - HTTP client for API calls
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### **Backend**
+- ☕ **Java 17** - Latest LTS version
+- 🍃 **Spring Boot 3.1** - Enterprise application framework
+- 🔒 **Spring Security** - Authentication and authorization
+- 🛡️ **JWT** - Stateless authentication tokens
+- 🗄️ **Spring Data JPA** - Database abstraction layer
+- ✅ **Bean Validation** - Input validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Database**
+- 🐬 **MySQL 8.0** - Robust relational database
+- 📊 **JPA/Hibernate** - ORM for database operations
 
-### Making a Progressive Web App
+### **Development Tools**
+- 🔧 **Maven** - Dependency management
+- 📝 **VS Code** - Primary development IDE
+- 🧪 **Postman** - API testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 Screenshot
 
-### Deployment
+### 🏠 Dashboard
+<div align="center">
+  <img src="https://github.com/Sanjith7760/PayrollManagementSystem_Capestone_FullStackProject/blob/master/Screenshot%202025-09-02%20231157.png" alt="Admin Dashboard" width="45%">
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 🔧 Installation
+
+### **Prerequisites**
+- ☕ Java 17 or higher
+- 📦 Node.js 22.17.0 or higher
+- 📊 MySQL 8.0 or higher
+- 🔧 Maven 3.9 or higher
+
+### **Backend Setup**
+
+1. **Configure Database**
+```properties
+# application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/payroll_management_system
+spring.datasource.username=root
+spring.datasource.password=sanjith
+```
+
+2. **Run Backend**
+```bash
+Method 1: Using STS Interface 
+Open your project in STS
+
+File → Import → Existing Maven Projects → Select your PayrollManagementSystem folder
+
+Right-click on your project in Package Explorer
+
+Select "Run As" → "Spring Boot App"
+```
+
+### **Frontend Setup**
+
+1. **Install Dependencies**
+```bash
+cd payroll-frontend
+npm install
+```
+
+2. **Configure API URL**
+```javascript
+// src/services/api.js
+const API_BASE_URL = 'http://localhost:8080/api/v1'
+```
+
+3. **Start Development Server**
+```bash
+npm run dev
+```
+
+---
+
+## 🔐 Authentication
+
+### **Default Credentials**
+
+| Role | Username | Password | Access Level |
+|------|----------|----------|--------------|
+| 👑 Admin | `admin` | `password` | Full system access |
+| 👤 Employee | `employee` | `password` | Limited access |
+
+### **JWT Token Flow**
+1. User login with credentials
+2. Server validates and returns JWT token
+3. Token stored in localStorage
+4. Token sent in Authorization header for subsequent requests
+5. Automatic token refresh on expiration
+
+---
+
+## 📊 API Documentation
+
+### **Authentication Endpoints**
+```http
+POST /auth/register -> Register a new employee (role: EMPLOYEE)
+POST /auth/login -> Login with email & password (returns JWT token)
+
+```
+
+### **Employee Management**
+```http
+GET /employees → Get all employees (Admin only)
+GET /employees/{id} → Get details of a specific employee
+GET /employees/me/profile → Get logged-in employee’s profile (Employee)
+POST /employees → Add a new employee (Admin)
+PUT /employees/{id} → Update employee details
+DELETE /employees/{id} → Delete an employee
+
+```
+
+### **Leave Management**
+```http
+GET /leaves/pending → Get all pending leave requests (Admin)
+GET /leaves/employee/{employeeId} → Get leave history of an employee
+POST /leaves/employee/{employeeId} → Apply for leave (Employee)
+PATCH /leaves/{leaveId}/approve → Approve leave request (Admin)
+PATCH /leaves/{leaveId}/reject → Reject leave request (Admin)
+
+```
+
+### **Payroll Management**
+```http
+GET /payroll → Get all payroll records (Admin)
+GET /payroll/my/{employeeId}/{year}/{month} → Get salary slip for logged-in employee
+POST /payroll/generate/{employeeId} → Generate payroll for an employee (Admin)
+PUT /payroll/{id} → Update payroll details
+DELETE /payroll/{id} → Delete a payroll record
+
+```
+
+> 📖 **Full API Documentation**: Available at `http://localhost:8080/swagger-ui.html` and POSTMAN
+
+---
+
+## 🧪 Testing
+
+### **Backend Testing**
+```bash
+#1. Run ALL Tests:
+Right-click on the project name in Package Explorer
+
+Select "Run As" → "JUnit Test"
+```
+
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. 🍴 Fork the repository
+2. 🌟 Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. 💾 Commit your changes (`git commit -m 'Add amazing feature'`)
+4. 📤 Push to the branch (`git push origin feature/amazing-feature`)
+5. 🔄 Open a Pull Request
+
+### **Development Guidelines**
+- 📝 Follow coding standards
+- ✅ Write tests for new features
+- 📚 Update documentation
+- 🔍 Ensure all tests pass
+
+---
+
+## 🐛 Known Issues
+
+- [ ] Email notifications for leave approvals (Coming soon)
+- [ ] Advanced reporting dashboard (In development)
+
+---
+
+
+## 👏 Acknowledgments
+
+- 🙏 **Spring Boot Team** - For the amazing framework
+- ⚛️ **React Team** - For the powerful UI library
+- 🎨 **Bootstrap Team** - For the responsive CSS framework
+- 💡 **Open Source Community** - For continuous inspiration
+
+---
+
+<div align="center">
+
+### 🌟 If you found this project helpful, please give it a star!
+
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/payroll-management-system?style=social)](https://github.com/yourusername/payroll-management-system/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/payroll-management-system?style=social)](https://github.com/yourusername/payroll-management-system/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/yourusername/payroll-management-system)](https://github.com/yourusername/payroll-management-system/issues)
+
+**Made with ❤️ by [Shaik Ismail](https://github.com/Ismailshaik0906)**
+
+*Happy Coding! 🚀*
+
+</div>
+
+---
