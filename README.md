@@ -1,15 +1,14 @@
-# 💼 Payroll Management System
-
 <div align="center">
 
 # 💼 Payroll Management System  
 
-![Payroll Management System](https://img.shields.io/badge/Payroll-Management%20System-blue?style=for-the-badge&logo=apacheairflow)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.0-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-4.0.0-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-![Java](https://img.shields.io/badge/Java-17-007396?style=for-the-badge&logo=java&logoColor=white)
+![Project](https://img.shields.io/badge/Project-Payroll%20Management%20System-blue?style=for-the-badge&logo=workplace&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-v3.1.0-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-v19.1.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-v8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-v4.0.0-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![Java](https://img.shields.io/badge/Java-v17-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+
 
 ---
 
